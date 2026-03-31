@@ -5,7 +5,9 @@ A healthcare SaaS demo application showcasing a secure CI/CD pipeline with integ
 Live Application - https://my-medical-oox6042vu-wav-pipeline.vercel.app/
 
 --CI/CD Pipeline (GitHub Actions)--
+
 Pipeline triggers on every push to "main"
+
 Workflow Stages
 1. Build
    - Install dependencies (npm ci)
@@ -39,6 +41,7 @@ Workflow Stages
   - Added unsafe code (eval) → SAST failed
 
 --Fix--
+
   Removed vulnerabilities → pipeline passed → deployment triggered
 
 --Tech Stack--
