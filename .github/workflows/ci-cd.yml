@@ -1,6 +1,4 @@
 name: HealFlow DevSecOps Pipeline
-env:
-  VERCEL_PROJECT_NAME: wav-devsecops
 
 on:
   push:
@@ -70,4 +68,4 @@ jobs:
         run: npm install -g vercel
 
       - name: Deploy to Vercel
-        run: vercel --prod --yes --token=${{ secrets.VERCEL_TOKEN }}
+        run: vercel --prod --yes --token=${{ secrets.VERCEL_TOKEN }} --project=${{ env.VERCEL_PROJECT_NAME }}
