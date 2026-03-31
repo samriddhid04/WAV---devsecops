@@ -1,4 +1,6 @@
 name: HealFlow DevSecOps Pipeline
+env:
+  VERCEL_PROJECT_NAME: wav-devsecops
 
 on:
   push:
